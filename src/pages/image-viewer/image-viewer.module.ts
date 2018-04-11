@@ -9,5 +9,6 @@ import { ImageViewerPage } from './image-viewer';
   imports: [
     IonicPageModule.forChild(ImageViewerPage),
   ],
+  exports:[ImageViewerPage]
 })
 export class ImageViewerPageModule {}
