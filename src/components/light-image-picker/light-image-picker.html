@@ -1,0 +1,22 @@
+<!-- Generated template for the LightImagePickerComponent component -->
+<div>
+  <ion-item no-padding no-lines>
+    <div class="sunvey-list">
+      <!-- 已有的照片 -->
+      <div class="sunvey-image" *ngFor="let photo of originPhotos">
+        <img [src]="photo" />
+      </div>
+      <!-- 新添加的照片 -->
+      <div class="sunvey-image" *ngFor="let item of addImageList">
+        <div>
+          <img src="{{item.Path}}" (click)="showImg(item)" />
+          <ion-icon class="sunvey-image-close" name="md-close-circle" (click)="removeAddPictureClick(item)"></ion-icon>
+        </div>
+      </div>
+      <div class="sunvey-image">
+        <ion-icon name="ios-add-outline" (click)="addPictureClick()"></ion-icon>
+      </div>
+    </div>
+  </ion-item>
+</div>
+

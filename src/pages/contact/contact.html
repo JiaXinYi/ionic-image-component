@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <light-image-picker [originPhotos]="originPhotos" (isAddPhoto)="getNewPhotos($event)"></light-image-picker>
+    <button ion-button full (click)="submit()">保存</button>
+</ion-content>
